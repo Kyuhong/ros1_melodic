@@ -1,0 +1,24 @@
+
+----------------------------------------------
+ @ ROS melodic Turtlebot3 의존성 패키지 설치
+----------------------------------------------
+
+sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy \
+ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc \
+ros-melodic-rgbd-launch ros-melodic-rosserial-arduino \
+ros-melodic-rosserial-python ros-melodic-rosserial-client \
+ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server \
+ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro \
+ros-melodic-compressed-image-transport ros-melodic-rqt* ros-melodic-rviz \
+ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
+
+
+----------------------------------------------
+ @ Turtlebot3 설치
+----------------------------------------------
+
+sudo apt install ros-melodic-turtlebot3-msgs
+
+sudo apt install ros-melodic-turtlebot3
+
+sudo apt-get install ros-melodic-turtlebot3-simulations

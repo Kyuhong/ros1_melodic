@@ -1,0 +1,32 @@
+
+
+1. Gazebo small house 시작
+roslaunch aws_robomaker_small_house_world view_small_house.launch
+
+2. Turtlebot3 Spawn
+roslaunch aws_robomaker_small_house_world spawn_turtlebot3.launch
+
+3. 키보드 제어
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+또는
+
+rosrun my_second_ros_pkg turtle_move.py
+
+
+4. Cartographer SLAM 실행
+
+roslaunch turtlebot3_slam turtlebot3_slam.launch  slam_methods:=cartographer configuration_basename:=turtlebot3_lds_2d_gazebo.lua
+
+
+5. 지도(SLAM Map) 파일 저장
+
+rosrun map_server map_saver -f ~/map
+
+
+
+6. 네비게이션 노드 실행
+turtlebot3_slam.launch 프로세스 종료 !!!
+
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+
